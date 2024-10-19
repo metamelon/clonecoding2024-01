@@ -1,0 +1,30 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+    /*position: fixed;  status-bar 위치가 계속 따라다니게! */
+    /*top: 100px; */
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
+}
+
+@keyframes rotateCog {
+    from {
+      transform: none;
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  .screen-header__icons .fa-gear:hover {
+    animation: rotateCog 2s linear infinite;
+  }

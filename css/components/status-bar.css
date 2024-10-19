@@ -1,0 +1,40 @@
+.status-bar {
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+    position: fixed; /* status-bar 위치가 계속 따라다니게! */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.status-bar__column {
+    width: 33%;
+}
+.status-bar__column:first-child span {
+    margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+.status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.status-bar__column .fa-battery-full{
+    margin: 0px 5px;
+}
+
+.screen-header__new {
+    color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    position:absolute;
+    right: 15px;
+    top: 10px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat w/ 뚠동이 - KokoaTalk</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span>18:43</span>
+          </div>
+          <div class="status-bar__column">
+            <span>98%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+          </div>
+    </div>
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html">
+            <i class="fa-solid fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+        <h1 class="alt-header__title">뚠동</h1>
+    </div>
+        <div class="alt-header__column">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-bars fa-lg"></i></span>
+        </div>
+    </header>
+
+    <main class="main-screen main-chat">
+        <div>
+            <div class="chat__timestamp">
+                Friday, October 4, 2024
+            </div>
+        </div>
+
+        <div class="message-row">
+            <img src="https://github.com/metamelon/clonecoding2024-01/blob/main/KakaoTalk_20241013_202404933.gif?raw=true" />
+            <div class="message-row__content">
+              <span class="message__author">뚠동이</span>
+              <div class="message__info">
+                <span class="message__bubble">집사야 뭐하냥!</span>
+                <span class="message__time">21:27</span>
+              </div>
+            </div>
+          </div>    
+
+          <div class="message-row message-row__own">
+            <div class="message-row__content">
+              <div class="message__info">
+                <span class="message__bubble">무슨일이야 주인님아!</span>
+                <span class="message__time">21:28</span>
+              </div>
+            </div>
+          </div>      
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+          <i class="fa-regular fa-square-plus fa-2x"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="메시지 입력" />
+          <i class="fa-regular fa-face-smile-wink"></i>
+          <button>
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
+
+      <div id="no-mobile">
+        <div><span>Your screen is too big ㅠㅠ. </span></div>
+        <div><p>화면의 폭을 줄여주세요!</p></div>
+      </div>
+
+
+        <script
+         src="https://kit.fontawesome.com/4778a7e7b1.js" crossorigin="anonymous"
+        ></script>
+</body>
+</html>
