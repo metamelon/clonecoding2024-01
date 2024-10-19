@@ -17,6 +17,8 @@
   }
 
   #no-mobile {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
+    padding: 50px;
 }
