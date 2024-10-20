@@ -2,13 +2,16 @@
     position: absolute;
     z-index: 99;
     height: 100vh;
-    background-color: var(--yellow);
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
     top: 0;
+    background: linear-gradient(45deg, var(--pink), var(--yellow));
+    background-size: 400% 400%;
+    animation: gradient-animation 3s ease infinite;
+    gap: 50px;
   }
   @media screen and (max-width: 645px) {
     #no-mobile {
@@ -21,4 +24,15 @@
     align-items: center;
     gap: 50px;
     padding: 50px;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

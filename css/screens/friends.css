@@ -38,7 +38,11 @@
       visibility: hidden;
     }
   }
-
+@keyframes swing {
+    0% { transform: rotate(45deg); }
+    50% { transform: rotate(-45deg); }
+    100% { transform: rotate(45deg); }
+}
 #splash-screen {
     background-color: var(--yellow);
     position: absolute;
@@ -52,3 +56,7 @@
     animation: hideSplashScreen 0.3s ease-in-out forwards;
     animation-delay: 2.5s;
   }
+
+.fa-web-awesome {
+    animation: swing 1s infinite;
+}
